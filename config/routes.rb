@@ -1,3 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :paragraphs, only: [:index, :show, :update, :destroy]
+  resources :images, only: [:index, :show, :update, :destroy]
+  resources :blogs do
+    resources :paragraphs, only: [:create]
+    resources :images, only: [:create]
+  end
 end
