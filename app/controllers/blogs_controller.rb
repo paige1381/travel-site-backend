@@ -8,6 +8,13 @@ class BlogsController < ApplicationController
     render json: @blogs.to_json(include: [:images, :paragraphs])
   end
 
+  # GET /blogs/home
+  def home
+    @blogs = Blog.first(3)
+
+    render json: @blogs.to_json(include: [:images, :paragraphs])
+  end
+
   # GET /blogs/1
   def show
     render json: @blog.to_json(include: [:images, :paragraphs])

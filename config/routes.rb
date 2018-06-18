@@ -5,5 +5,8 @@ Rails.application.routes.draw do
   resources :blogs do
     resources :paragraphs, only: [:create]
     resources :images, only: [:create]
+    collection do
+      get 'home', to: 'blogs#home'
+    end
   end
 end
