@@ -10,54 +10,40 @@
 Blog.create(
   [{
     title: 'Nashville: BBQ, Tacos, & Avocado Toast',
-    feature_image_1: 0,
-    feature_image_1_content: 0,
-    feature_image_2: 0,
-    feature_image_2_content: 2,
-    feature_text: 1
+    feature_image_1: "https://s3.amazonaws.com/black-dog-travel/nashville/Nashville-00888.jpg",
+    feature_image_2: "https://s3.amazonaws.com/black-dog-travel/nashville/Nashville-00882.jpg",
+    feature_text: 'These three things pretty much summed up my food experience in Nashville. Needless to say this was a positive experience, but before focusing on the delicious food we had, I have to call out the delicious beers that we had reallly quick.'
   },
   {
     title: 'Things I Learned in Denver',
-    feature_image_1: 0,
-    feature_image_1_content: 0,
-    feature_image_2: 0,
-    feature_image_2_content: 14,
-    feature_text: 1
+    feature_image_1: "https://s3.amazonaws.com/black-dog-travel/denver/Denver-01082.jpg",
+    feature_image_2: "https://s3.amazonaws.com/black-dog-travel/denver/Denver-00926.jpg",
+    feature_text: '1) Altitude sickness is a real thing ... I’ll start out by mentioning that I had a cold coming into the week we were staying in Denver so I was already sick, but I completely forgot about the change in altitude and what that would additionally do to my body. Oops. On our first night here we stopped at a dispensary (because), then had an amazing dinner and drinks at Señor Bear.'
   },
   {
     title: 'Utah: Dead Horse Point',
-    feature_image_1: 0,
-    feature_image_1_content: 0,
-    feature_image_2: 0,
-    feature_image_2_content: 2,
-    feature_text: 1
+    feature_image_1: "https://s3.amazonaws.com/black-dog-travel/moab/Moab-01229.jpg",
+    feature_image_2: "https://s3.amazonaws.com/black-dog-travel/moab/Moab-01334.jpg",
+    feature_text: 'Our journey from Denver into Utah, near Moab, marked the the start of our camping experiences on our road trip. The ride through western Colorado was so beautiful as we passed through ski towns, neighboring huge slopes. There was still a bunch of snow on the ground in those areas and it was crazy to see skiers from the highway.'
   },
   {
     title: 'Utah: Manti-La Sal & Arches',
-    feature_image_1: 0,
-    feature_image_1_content: 0,
-    feature_image_2: 0,
-    feature_image_2_content: 3,
-    feature_text: 1
+    feature_image_1: "https://s3.amazonaws.com/black-dog-travel/moab/Moab-01711.jpg",
+    feature_image_2: "https://s3.amazonaws.com/black-dog-travel/moab/Moab-01424.jpg",
+    feature_text: "After our stay out in Dead Horse Point State Park, Joey, Remy, and I made our way through Moab (where the mountain biker population continued to rise) and picked up supplies for our next stop up in the Manti-La Sal National Forest in the most adorable cabin. Ever."
   },
   {
     title: 'Arizona: Page Part I',
-    feature_image_1: 0,
-    feature_image_1_content: 0,
-    feature_image_2: 0,
-    feature_image_2_content: 12,
-    feature_text: 1
+    feature_image_1: "https://s3.amazonaws.com/black-dog-travel/page/Page-01721.jpg",
+    feature_image_2: "https://s3.amazonaws.com/black-dog-travel/page/Page-01940.jpg",
+    feature_text: "It was a pretty short ride from Moab to Page, Arizona - 4.5 hours compared to the 7 and 8 hour trips we'd been making to get this far west. We made a point of taking the route that would swing us by Monument Valley, through the Navajo Reservation. I wasn't sure what to expect here, I had only seen instagram photos of those three iconic sandstone buttes and assumed those shots were taken from cars passing by. As we neared the area, there were a ton of turnouts, and I couldn't tell which rock formations were the three I'd seen a million times in photos. Based off of social media, you'd think that Monument Valley is home to only those buttes, but in reality they’re are everywhere."
   },
   {
     title: 'Arizona: Page Part II',
-    feature_image_1: 0,
-    feature_image_1_content: 0,
-    feature_image_2: 0,
-    feature_image_2_content: 21,
-    feature_text: 1
+    feature_image_1: "https://s3.amazonaws.com/black-dog-travel/page/Page-02059.jpg",
+    feature_image_2: "https://s3.amazonaws.com/black-dog-travel/page/Page-02115.jpg",
+    feature_text: "Our first day in Page was pretty packed between the slot canyon tour and the UTV ride, so on our second day, which happened to be Cinco De Mayo, we decided to relax out on Lake Powell. Neither Joey nor I had really ever paddle boarded for any extended period of time, so we decided to rent some boards from Kayak Lake Powell and explore Antelope Canyon from the water."
   }
-
-
 ]
 )
 
@@ -165,12 +151,6 @@ Content.create([
     form_order: 16,
     blog_id: 1
   },
-
-
-
-
-
-
   {
     image: 1,
     image_type: 0,
@@ -345,8 +325,6 @@ Content.create([
     form_order: 29,
     blog_id: 2
   },
-
-
   {
     image: 1,
     image_type: 0,
@@ -485,9 +463,6 @@ Content.create([
     form_order: 22,
     blog_id: 3
   },
-
-
-
   {
     image: 1,
     image_type: 0,
@@ -698,8 +673,6 @@ Content.create([
     form_order: 34,
     blog_id: 4
   },
-
-
   {
     image: 1,
     image_type: 0,
@@ -808,9 +781,6 @@ Content.create([
     form_order: 17,
     blog_id: 5
   },
-
-
-
   {
     image: 1,
     image_type: 0,

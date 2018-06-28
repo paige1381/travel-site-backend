@@ -5,14 +5,14 @@ class BlogsController < ApplicationController
   def index
     @blogs = Blog.all
 
-    render json: @blogs.to_json(:include => {:contents => {:include => :images}})
+    render json: @blogs
   end
 
   # GET /blogs/home
   def home
     @blogs = Blog.first(3)
 
-    render json: @blogs.to_json(:include => {:contents => {:include => :images}})
+    render json: @blogs
   end
 
   # GET /blogs/1
@@ -53,6 +53,6 @@ class BlogsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def blog_params
-      params.require(:blog).permit(:title, :feature_image_1, :feature_image_1_content, :feature_image_2, :feature_image_2_content, :feature_text)
+      params.require(:blog).permit(:title, :feature_image_1, :feature_image_2, :feature_text)
     end
 end
