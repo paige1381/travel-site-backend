@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_06_28_200612) do
+ActiveRecord::Schema.define(version: 2018_07_01_211847) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,13 +25,14 @@ ActiveRecord::Schema.define(version: 2018_06_28_200612) do
   end
 
   create_table "contents", force: :cascade do |t|
-    t.string "content"
+    t.string "text"
     t.boolean "image"
     t.integer "image_type"
     t.integer "form_order"
     t.integer "blog_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "image_num"
   end
 
   create_table "images", force: :cascade do |t|
